@@ -15,7 +15,7 @@ RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && ap
     && rm -r /var/lib/apt/lists/*
 
 # Download toolchain, unpack, cleanup and execute permissions for foundation libs
-RUN SWIFT_URL=https://storage.googleapis.com/swift-tensorflow-artifacts/releases/v0.5/rc0/swift-tensorflow-RELEASE-0.5-ubuntu18.04.tar.gz \
+RUN SWIFT_URL=https://storage.googleapis.com/swift-tensorflow-artifacts/releases/v0.5/rc1/swift-tensorflow-RELEASE-0.5-ubuntu18.04.tar.gz \
     && apt-get update \
     && apt-get install -y curl \
     && curl -fSsL $SWIFT_URL -o swift.tar.gz \
