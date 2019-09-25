@@ -1,0 +1,12 @@
+name: Trigger nightly docker images build
+
+on:
+  schedule:
+  - cron: 0 0 0 * *
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Call Docker Hub URL
+      run: curl -X POST https://cloud.docker.com/api/build/v1/source/e706feee-217a-40c9-b784-018f1b5594ed/trigger/cb29d9de-5784-4327-9d31-131659df1a87/call/
