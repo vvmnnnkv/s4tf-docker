@@ -1,4 +1,4 @@
-# Swift for Tensorflow Dockerfiles
+# Swift for Tensorflow Docker Images
 
 Unofficial Dockerfiles for [Swift for Tensorflow](https://www.tensorflow.org/swift) toolchain.
 
