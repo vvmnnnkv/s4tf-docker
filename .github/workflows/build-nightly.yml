@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Call Docker Hub URL
-      run: curl -X POST https://cloud.docker.com/api/build/v1/source/e706feee-217a-40c9-b784-018f1b5594ed/trigger/cb29d9de-5784-4327-9d31-131659df1a87/call/
+      run: curl -X POST https://hub.docker.com/api/build/v1/source/e706feee-217a-40c9-b784-018f1b5594ed/trigger/37437530-0c1d-4e5e-9b7e-3da7720f34ca/call/
